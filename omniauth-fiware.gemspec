@@ -5,7 +5,7 @@ Gem::Specification.new do |gem|
   gem.authors       = [ "Antonio Tapiador",
                        "GING - DIT - UPM" ]
   gem.email         = [ "social-stream@dit.upm.es"]
-  gem.description   = "OmniAuth strategy for FI-WARE IdM GE."
+  gem.description   = "OmniAuth OAuth2 strategy for FI-WARE IdM GE."
   gem.summary       = "FI-WARE will deliver a novel service infrastructure, building upon elements (called Generic Enablers). This is the OmniAuth strategy for Identity Management GE"
   gem.homepage      = "https://github.com/ging/omniauth-fiware"
 
@@ -16,9 +16,9 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = OmniAuth::Fiware::VERSION
 
-  gem.add_dependency 'omniauth-socialstream', '~> 0.1.3'
+  gem.add_dependency 'omniauth-oauth2', '~> 1.2.0'
 
-  gem.add_development_dependency 'rspec', '~> 2.7'
+  gem.add_development_dependency 'rspec'
   gem.add_development_dependency 'rake'
   gem.add_development_dependency 'rack-test'
   gem.add_development_dependency 'simplecov'
