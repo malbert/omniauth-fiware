@@ -4,9 +4,9 @@ module OmniAuth
   module Strategies
     class Fiware < OmniAuth::Strategies::OAuth2
       option :client_options, {
-        site: "https://accounts.lab.fiware.org",
-        authorize_url: 'https://accounts.lab.fiware.org/oauth2/authorize',
-        token_url: 'https://accounts.lab.fiware.org/oauth2/token'
+        site: "https://account.lab.fiware.org",
+        authorize_url: 'https://account.lab.fiware.org/oauth2/authorize',
+        token_url: 'https://account.lab.fiware.org/oauth2/token'
       }
 
       uid { raw_info['id'] }

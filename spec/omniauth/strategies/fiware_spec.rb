@@ -30,15 +30,15 @@ describe OmniAuth::Strategies::Fiware do
 
   context "client options" do
     it 'should have correct site' do
-      expect(subject.options.client_options.site).to eq("https://accounts.lab.fiware.org")
+      expect(subject.options.client_options.site).to eq("https://account.lab.fiware.org")
     end
 
     it 'should have correct authorize url' do
-      expect(subject.options.client_options.authorize_url).to eq('https://accounts.lab.fiware.org/oauth2/authorize')
+      expect(subject.options.client_options.authorize_url).to eq('https://account.lab.fiware.org/oauth2/authorize')
     end
 
     it 'should have correct token url' do
-      expect(subject.options.client_options.token_url).to eq('https://accounts.lab.fiware.org/oauth2/token')
+      expect(subject.options.client_options.token_url).to eq('https://account.lab.fiware.org/oauth2/token')
     end
 
     describe "should be overrideable" do
